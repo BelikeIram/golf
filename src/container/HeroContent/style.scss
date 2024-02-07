@@ -1,0 +1,81 @@
+.hero-content{
+    width: 80%;
+    margin: 4rem auto 0 auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+
+    .hero-header{
+        width: 50%;
+        text-align: center;
+        font-size: 1.7rem;
+        color: black;
+        font-weight: 800;
+    }
+    .hero-desc{
+        width: 60%;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+    }
+    .field{
+        width: 300px;
+        height: 35px;
+        background: white;
+        border-radius: 21px;
+        position: relative;
+        margin: 3rem 0;
+
+        .search-input{
+            width: 100%;
+            height: 100%;
+            border-radius: 21px;
+            border: none;
+            padding-left: 1rem;
+        }
+
+        .search-input::placeholder{
+            font-size: 0.97rem;
+        }
+        .search-icon{
+            position: absolute;
+            top: 6px;
+            right: 10px;
+
+            .search{
+                color: black;
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+    .hero-brand{
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 800;
+        color: white;
+    }
+    .hero-brand-header{
+        text-align: center;
+    }
+    .hero-brand-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .hero-content .hero-brand{
+        margin-top: 7rem;
+    }
+}
+@media screen and (max-width:1200px) and ( min-width : 769px) {
+    .hero-content .hero-brand{
+        margin-top: 2rem;
+    }
+}
